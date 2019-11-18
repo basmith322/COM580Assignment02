@@ -1,0 +1,60 @@
+﻿@model COM580Assignment02.Models.Animal
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Animal</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.animalName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.animalName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.animalType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.animalType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.animalBreed)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.animalBreed)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.animalGender)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.animalGender)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.animalDOB)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.animalDOB)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.animalCharacteristics)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.animalCharacteristics)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.animalImage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.animalImage)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
