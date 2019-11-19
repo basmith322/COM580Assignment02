@@ -17,7 +17,7 @@ namespace COM580Assignment02.Services
                 animalCharacteristics = "Ignorant, Loving, Fluffy, Cheeky",
                 animalDOB = DateTime.Parse("11/10/2008"),
                 animalGender = "Male",
-                animalImage = ""
+                animalImage = "https://s3.amazonaws.com/filestore.rescuegroups.org/956/pictures/animals/8782/8782356/27376639_500x421.jpg"
             });
             var a2 = service.Insert(new Animal
             {
@@ -27,7 +27,7 @@ namespace COM580Assignment02.Services
                 animalCharacteristics = "Sweet, timid",
                 animalDOB = DateTime.Parse("11/10/2017"),
                 animalGender = "Female",
-                animalImage = ""
+                animalImage = "https://www.purina.co.uk/sites/g/files/mcldtz2481/files/2019-07/what_are_tabby_cats_3.jpg"
             });
         }
     }
