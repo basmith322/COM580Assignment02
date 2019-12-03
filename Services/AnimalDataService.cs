@@ -20,6 +20,11 @@ namespace COM580Assignment02.Services
             this.db = db;
         }
 
+        public void Initialise()
+        {
+            db.Initialise();
+        }
+
         public bool Delete(int id)
         {
             var existing = db.Animals.FirstOrDefault(a => a.ID == id);
@@ -30,11 +35,6 @@ namespace COM580Assignment02.Services
             db.Remove(existing);
             db.SaveChanges();
             return true;
-        }
-
-        public void Initialise()
-        {
-            db.Initialise();
         }
 
         public Animal Insert(Animal obj)

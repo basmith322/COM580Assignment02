@@ -71,6 +71,7 @@ namespace COM580Assignment02
             }
 
             app.UseHttpsRedirection();
+            app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
